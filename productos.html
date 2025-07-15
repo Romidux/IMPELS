@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos los productos - Impels</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Impels</div>
+    <nav>
+        <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#catalogo">Catálogo</a></li>
+            <li><a href="index.html#anime">Anime</a></li>
+            <li><a href="index.html#f1">F1</a></li>
+            <li><a href="index.html#futbol">Fútbol</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+        <span class="material-icons">menu</span>
+    </div>
+
+    <div class="search-toggle" id="searchToggle">
+        <span class="material-icons">search</span>
+    </div>
+
+    <div class="search-bar-header hidden" id="searchBar">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Buscar cuadro...">
+            <span class="material-icons">search</span>
+        </div>
+    </div>
+</header>
+
+
+  <section class="catalog-section" id="catalogo">
+    <h2 class="section-title">Todos los Productos</h2>
+    <div class="filtros-container">
+        <select id="filtroCategoria">
+            <option value="todos">Todas las categorías</option>
+            <option value="anime">Anime</option>
+            <option value="f1">Fórmula 1</option>
+            <option value="futbol">Fútbol</option>
+        </select>
+
+        <select id="ordenarPor">
+            <option value="relevancia">Destacados</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+            <option value="nombre-az">Nombre: A-Z</option>
+            <option value="nombre-za">Nombre: Z-A</option>
+        </select>
+    </div>
+
+    <div class="gallery" id="galeria-productos">
+      <!-- Se insertan los productos desde JS -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Impels. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="productos-data.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

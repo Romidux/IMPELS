@@ -1,0 +1,100 @@
+<!-- Aquí va todo tu código de la página principal  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Cuadros - Impels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Impels</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#formula1">Fórmula 1</a></li>
+        <li><a href="#anime">Anime</a></li>
+        <li><a href="#futbol">Fútbol</a></li>
+      </ul>
+    </nav>
+  <div class="menu-toggle" id="menuToggle">
+       <span class="material-icons">menu</span>
+  </div>
+
+<div class="search-toggle" id="searchToggle">
+  <span class="material-icons">search</span>
+</div>
+
+<div class="search-bar-header" id="searchBar">
+  <div class="search-wrapper">
+    <input type="text" id="searchInput" placeholder="Buscar cuadro...">
+    <span class="material-icons">search</span>
+  </div>
+</div>
+
+  </header>
+
+  <section class="hero" id="inicio">
+  <h1>Transformá tus espacios con arte</h1>
+  <p>Cuadros únicos de anime, música, deportes y más. Envíos a todo el país.</p>
+  <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+</section>
+<section class="features">
+  <div class="feature">🚚 Envíos a todo el país</div>
+  <div class="feature">💳 Pagá con todas las tarjetas</div>
+  <div class="feature">🔒 Compra 100% segura</div>
+</section>
+
+<section class="catalog-section" id="catalogo">
+  <h2 class="section-title">Nuestro Catálogo</h2>
+  <div class="gallery" id="galeria-productos">
+     <!-- Aquí se cargan los productos automáticamente -->
+  </div>
+</section>
+<div style="text-align:center; margin: 2rem 0;">
+  <a href="productos.html" class="btn-primary">Ver Todos los Productos</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>Impels</h3>
+      <p>Transformá tu espacio con cuadros únicos de anime, deportes y más.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+  <h4>Contáctanos</h4>
+  <div class="social-icons">
+    <a href="https://instagram.com" target="_blank">
+      <img src="img/instagram.svg" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://wa.me/595992957450" target="_blank">
+      <img src="img/whatsapp-black.svg" alt="WhatsApp" class="social-icon">
+    </a>
+    <a href="https://tiktok.com" target="_blank">
+      <img src="img/tik-tok.svg" alt="TikTok" class="social-icon">
+    </a>
+  </div>
+</div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Impels. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+<script src="productos-data.js"></script>
+<script src="main.js"></script> 
+</body>
+</html>
